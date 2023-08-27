@@ -1,5 +1,7 @@
 # Coccidiosis_Chiken_disease_classification
-using CNN
+using CNN and Deployment 
+
+
 
 
 
