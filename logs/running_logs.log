@@ -83,3 +83,43 @@ Source-Age: 0
 [2023-08-27 14:32:22,032:INFO:main:>>>>stage Data Ingestion stage completed  <<<<
 
 x===========x]
+[2023-08-30 16:23:55,028:INFO:common:yaml file: config\config.yaml loaded successfully]
+[2023-08-30 16:23:55,043:INFO:common:yaml file: params.yaml loaded successfully]
+[2023-08-30 16:23:55,051:INFO:common:created directory at: artifacts]
+[2023-08-30 16:23:55,058:INFO:common:created directory at: artifacts/prepare_base_model]
+[2023-08-30 16:24:16,540:WARNING:saving_utils:Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2023-08-30 16:30:29,737:INFO:main:>>>>stageData Ingestion stage started<<<<<<<]
+[2023-08-30 16:30:29,746:INFO:common:yaml file: config\config.yaml loaded successfully]
+[2023-08-30 16:30:29,751:INFO:common:yaml file: params.yaml loaded successfully]
+[2023-08-30 16:30:29,752:INFO:common:created directory at: artifacts]
+[2023-08-30 16:30:29,754:INFO:common:created directory at: artifacts/data_ingestion]
+[2023-08-30 16:30:34,576:INFO:data_ingestion:artifacts/data_ingestion/data.zip download! with following info: 
+Connection: close
+Content-Length: 11616915
+Cache-Control: max-age=300
+Content-Security-Policy: default-src 'none'; style-src 'unsafe-inline'; sandbox
+Content-Type: application/zip
+ETag: "adf745abc03891fe493c3be264ec012691fe3fa21d861f35a27edbe6d86a76b1"
+Strict-Transport-Security: max-age=31536000
+X-Content-Type-Options: nosniff
+X-Frame-Options: deny
+X-XSS-Protection: 1; mode=block
+X-GitHub-Request-Id: E090:2125BB:602DE:9075D:64EF214E
+Accept-Ranges: bytes
+Date: Wed, 30 Aug 2023 11:00:31 GMT
+Via: 1.1 varnish
+X-Served-By: cache-hyd1100022-HYD
+X-Cache: MISS
+X-Cache-Hits: 0
+X-Timer: S1693393231.912098,VS0,VE886
+Vary: Authorization,Accept-Encoding,Origin
+Access-Control-Allow-Origin: *
+Cross-Origin-Resource-Policy: cross-origin
+X-Fastly-Request-ID: d5afe90de3bbb46a21773cf782ab4abe071e9357
+Expires: Wed, 30 Aug 2023 11:05:31 GMT
+Source-Age: 0
+
+]
+[2023-08-30 16:30:37,011:INFO:main:>>>>stage Data Ingestion stage completed  <<<<
+
+x===========x]
