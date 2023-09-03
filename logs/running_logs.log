@@ -123,3 +123,75 @@ Source-Age: 0
 [2023-08-30 16:30:37,011:INFO:main:>>>>stage Data Ingestion stage completed  <<<<
 
 x===========x]
+[2023-08-30 17:19:39,217:INFO:common:yaml file: config\config.yaml loaded successfully]
+[2023-08-30 17:19:39,220:INFO:common:yaml file: params.yaml loaded successfully]
+[2023-08-30 17:19:39,221:INFO:common:created directory at: artifacts]
+[2023-08-30 17:19:39,222:INFO:common:created directory at: artifacts/prepare_base_model]
+[2023-08-30 17:19:39,828:WARNING:saving_utils:Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2023-08-30 17:19:43,566:INFO:main:>>>>stageData Ingestion stage started<<<<<<<]
+[2023-08-30 17:19:43,578:INFO:common:yaml file: config\config.yaml loaded successfully]
+[2023-08-30 17:19:43,588:INFO:common:yaml file: params.yaml loaded successfully]
+[2023-08-30 17:19:43,591:INFO:common:created directory at: artifacts]
+[2023-08-30 17:19:43,593:INFO:common:created directory at: artifacts/data_ingestion]
+[2023-08-30 17:19:43,595:INFO:data_ingestion:File already exists of size: ~ 11345 KB]
+[2023-08-30 17:19:44,759:INFO:main:>>>>stage Data Ingestion stage completed  <<<<
+
+x===========x]
+[2023-08-30 17:19:44,760:INFO:main:>>>>stagePrepare Base Model started<<<<<<<]
+[2023-08-30 17:19:44,764:INFO:common:yaml file: config\config.yaml loaded successfully]
+[2023-08-30 17:19:44,770:INFO:common:yaml file: params.yaml loaded successfully]
+[2023-08-30 17:19:44,773:INFO:common:created directory at: artifacts]
+[2023-08-30 17:19:44,774:INFO:common:created directory at: artifacts/prepare_base_model]
+[2023-08-30 17:19:45,636:WARNING:saving_utils:Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2023-08-30 17:19:49,314:INFO:main:>>>>stage Prepare Base Model completed  <<<<
+
+x===========x]
+[2023-08-30 17:21:42,984:INFO:common:yaml file: config\config.yaml loaded successfully]
+[2023-08-30 17:21:42,987:INFO:common:yaml file: params.yaml loaded successfully]
+[2023-08-30 17:21:42,989:INFO:common:created directory at: artifacts]
+[2023-08-30 17:21:42,990:INFO:common:created directory at: artifacts/prepare_base_model]
+[2023-08-30 17:21:43,637:WARNING:saving_utils:Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2023-08-30 17:21:44,914:INFO:main:>>>>stageData Ingestion stage started<<<<<<<]
+[2023-08-30 17:21:44,922:INFO:common:yaml file: config\config.yaml loaded successfully]
+[2023-08-30 17:21:44,930:INFO:common:yaml file: params.yaml loaded successfully]
+[2023-08-30 17:21:44,932:INFO:common:created directory at: artifacts]
+[2023-08-30 17:21:44,935:INFO:common:created directory at: artifacts/data_ingestion]
+[2023-08-30 17:21:49,191:INFO:data_ingestion:artifacts/data_ingestion/data.zip download! with following info: 
+Connection: close
+Content-Length: 11616915
+Cache-Control: max-age=300
+Content-Security-Policy: default-src 'none'; style-src 'unsafe-inline'; sandbox
+Content-Type: application/zip
+ETag: "adf745abc03891fe493c3be264ec012691fe3fa21d861f35a27edbe6d86a76b1"
+Strict-Transport-Security: max-age=31536000
+X-Content-Type-Options: nosniff
+X-Frame-Options: deny
+X-XSS-Protection: 1; mode=block
+X-GitHub-Request-Id: E090:2125BB:602DE:9075D:64EF214E
+Accept-Ranges: bytes
+Date: Wed, 30 Aug 2023 11:51:46 GMT
+Via: 1.1 varnish
+X-Served-By: cache-hyd1100020-HYD
+X-Cache: HIT
+X-Cache-Hits: 0
+X-Timer: S1693396306.221484,VS0,VE343
+Vary: Authorization,Accept-Encoding,Origin
+Access-Control-Allow-Origin: *
+Cross-Origin-Resource-Policy: cross-origin
+X-Fastly-Request-ID: 0982f10eba72a0bd2bc974e79917ce9fcf7ca8b0
+Expires: Wed, 30 Aug 2023 11:56:46 GMT
+Source-Age: 0
+
+]
+[2023-08-30 17:21:51,081:INFO:main:>>>>stage Data Ingestion stage completed  <<<<
+
+x===========x]
+[2023-08-30 17:21:51,082:INFO:main:>>>>stagePrepare Base Model started<<<<<<<]
+[2023-08-30 17:21:51,085:INFO:common:yaml file: config\config.yaml loaded successfully]
+[2023-08-30 17:21:51,088:INFO:common:yaml file: params.yaml loaded successfully]
+[2023-08-30 17:21:51,089:INFO:common:created directory at: artifacts]
+[2023-08-30 17:21:51,090:INFO:common:created directory at: artifacts/prepare_base_model]
+[2023-08-30 17:21:51,625:WARNING:saving_utils:Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2023-08-30 17:21:55,271:INFO:main:>>>>stage Prepare Base Model completed  <<<<
+
+x===========x]
