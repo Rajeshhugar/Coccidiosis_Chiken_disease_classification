@@ -1,0 +1,6 @@
+[2023-09-03 13:48:54,953:INFO:common:yaml file: config\config.yaml loaded successfully]
+[2023-09-03 13:48:54,972:INFO:common:yaml file: params.yaml loaded successfully]
+[2023-09-03 13:48:54,977:INFO:common:created directory at: artifacts]
+[2023-09-03 13:55:41,197:INFO:common:yaml file: config\config.yaml loaded successfully]
+[2023-09-03 13:55:41,210:INFO:common:yaml file: params.yaml loaded successfully]
+[2023-09-03 13:55:41,215:INFO:common:created directory at: artifacts]

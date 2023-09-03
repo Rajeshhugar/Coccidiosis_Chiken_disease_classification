@@ -1,0 +1,69 @@
+[2023-09-03 15:40:58,990:INFO:common:yaml file: config\config.yaml loaded successfully]
+[2023-09-03 15:40:58,993:INFO:common:yaml file: params.yaml loaded successfully]
+[2023-09-03 15:40:58,995:INFO:common:created directory at: artifacts]
+[2023-09-03 15:40:58,997:INFO:common:created directory at: artifacts/prepare_base_model]
+[2023-09-03 15:40:59,586:WARNING:saving_utils:Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2023-09-03 15:41:00,540:INFO:main:>>>>stageData Ingestion stage started<<<<<<<]
+[2023-09-03 15:41:00,543:INFO:common:yaml file: config\config.yaml loaded successfully]
+[2023-09-03 15:41:00,546:INFO:common:yaml file: params.yaml loaded successfully]
+[2023-09-03 15:41:00,547:INFO:common:created directory at: artifacts]
+[2023-09-03 15:41:00,548:INFO:common:created directory at: artifacts/data_ingestion]
+[2023-09-03 15:41:06,794:INFO:data_ingestion:artifacts/data_ingestion/data.zip download! with following info: 
+Connection: close
+Content-Length: 11616915
+Cache-Control: max-age=300
+Content-Security-Policy: default-src 'none'; style-src 'unsafe-inline'; sandbox
+Content-Type: application/zip
+ETag: "adf745abc03891fe493c3be264ec012691fe3fa21d861f35a27edbe6d86a76b1"
+Strict-Transport-Security: max-age=31536000
+X-Content-Type-Options: nosniff
+X-Frame-Options: deny
+X-XSS-Protection: 1; mode=block
+X-GitHub-Request-Id: D51C:3127AC:152847:2051C1:64F45BB6
+Accept-Ranges: bytes
+Date: Sun, 03 Sep 2023 10:11:03 GMT
+Via: 1.1 varnish
+X-Served-By: cache-hyd1100031-HYD
+X-Cache: MISS
+X-Cache-Hits: 0
+X-Timer: S1693735863.792121,VS0,VE1035
+Vary: Authorization,Accept-Encoding,Origin
+Access-Control-Allow-Origin: *
+Cross-Origin-Resource-Policy: cross-origin
+X-Fastly-Request-ID: 0b847199ac9d94e56cd39b66dc06b039b3129332
+Expires: Sun, 03 Sep 2023 10:16:03 GMT
+Source-Age: 1
+
+]
+[2023-09-03 15:41:08,456:INFO:main:>>>>stage Data Ingestion stage completed  <<<<
+
+x===========x]
+[2023-09-03 15:41:08,457:INFO:main:>>>>stagePrepare Base Model started<<<<<<<]
+[2023-09-03 15:41:08,470:INFO:common:yaml file: config\config.yaml loaded successfully]
+[2023-09-03 15:41:08,477:INFO:common:yaml file: params.yaml loaded successfully]
+[2023-09-03 15:41:08,478:INFO:common:created directory at: artifacts]
+[2023-09-03 15:41:08,479:INFO:common:created directory at: artifacts/prepare_base_model]
+[2023-09-03 15:41:09,923:WARNING:saving_utils:Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2023-09-03 15:41:13,938:INFO:main:>>>>stage Prepare Base Model completed  <<<<
+
+x===========x]
+[2023-09-03 15:41:13,940:INFO:main:*******************]
+[2023-09-03 15:41:13,940:INFO:main:>>>>>> stage Training started <<<<<<]
+[2023-09-03 15:41:13,953:INFO:common:yaml file: config\config.yaml loaded successfully]
+[2023-09-03 15:41:13,959:INFO:common:yaml file: params.yaml loaded successfully]
+[2023-09-03 15:41:13,961:INFO:common:created directory at: artifacts]
+[2023-09-03 15:41:13,967:INFO:common:created directory at: artifacts\prepare_callbacks\checkpoint_dir]
+[2023-09-03 15:41:13,971:INFO:common:created directory at: artifacts\prepare_callbacks\tensorboard_log_dir]
+[2023-09-03 15:41:13,975:ERROR:main:'WindowsPath' object has no attribute 'endswith']
+Traceback (most recent call last):
+  File "main.py", line 37, in <module>
+    model_trainer.main()
+  File "D:\CHICKEN\Coccidiosis_Chiken_disease_classification\Chicken_disease_classification\pipeline\stage_03_training.py", line 17, in main
+    callback_list = prepare_callbacks.get_tb_ckpt_callbacks()
+  File "D:\CHICKEN\Coccidiosis_Chiken_disease_classification\Chicken_disease_classification\components\prepare_callbacks.py", line 36, in get_tb_ckpt_callbacks
+    self._create_ckpt_callbacks
+  File "D:\CHICKEN\Coccidiosis_Chiken_disease_classification\Chicken_disease_classification\components\prepare_callbacks.py", line 27, in _create_ckpt_callbacks
+    return tf.keras.callbacks.ModelCheckpoint(
+  File "C:\Users\rajes\.conda\envs\chicken_disease\lib\site-packages\keras\src\callbacks.py", line 1369, in __init__
+    if filepath and filepath.endswith(".keras") and options is not None:
+AttributeError: 'WindowsPath' object has no attribute 'endswith'
