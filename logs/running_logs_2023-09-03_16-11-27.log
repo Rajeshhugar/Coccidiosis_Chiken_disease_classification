@@ -1,0 +1,34 @@
+[2023-09-03 16:11:32,338:INFO:common:yaml file: config\config.yaml loaded successfully]
+[2023-09-03 16:11:32,340:INFO:common:yaml file: params.yaml loaded successfully]
+[2023-09-03 16:11:32,340:INFO:common:created directory at: artifacts]
+[2023-09-03 16:11:32,341:INFO:common:created directory at: artifacts/prepare_base_model]
+[2023-09-03 16:11:32,907:WARNING:saving_utils:Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2023-09-03 16:11:35,147:INFO:main:>>>>stageData Ingestion stage started<<<<<<<]
+[2023-09-03 16:11:35,159:INFO:common:yaml file: config\config.yaml loaded successfully]
+[2023-09-03 16:11:35,165:INFO:common:yaml file: params.yaml loaded successfully]
+[2023-09-03 16:11:35,167:INFO:common:created directory at: artifacts]
+[2023-09-03 16:11:35,168:INFO:common:created directory at: artifacts/data_ingestion]
+[2023-09-03 16:11:35,169:INFO:data_ingestion:File already exists of size: ~ 11345 KB]
+[2023-09-03 16:11:36,103:INFO:main:>>>>stage Data Ingestion stage completed  <<<<
+
+x===========x]
+[2023-09-03 16:11:36,104:INFO:main:>>>>stagePrepare Base Model started<<<<<<<]
+[2023-09-03 16:11:36,107:INFO:common:yaml file: config\config.yaml loaded successfully]
+[2023-09-03 16:11:36,109:INFO:common:yaml file: params.yaml loaded successfully]
+[2023-09-03 16:11:36,110:INFO:common:created directory at: artifacts]
+[2023-09-03 16:11:36,110:INFO:common:created directory at: artifacts/prepare_base_model]
+[2023-09-03 16:11:36,638:WARNING:saving_utils:Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2023-09-03 16:11:38,698:INFO:main:>>>>stage Prepare Base Model completed  <<<<
+
+x===========x]
+[2023-09-03 16:11:38,700:INFO:main:*******************]
+[2023-09-03 16:11:38,702:INFO:main:>>>>>> stage Training started <<<<<<]
+[2023-09-03 16:11:38,713:INFO:common:yaml file: config\config.yaml loaded successfully]
+[2023-09-03 16:11:38,720:INFO:common:yaml file: params.yaml loaded successfully]
+[2023-09-03 16:11:38,723:INFO:common:created directory at: artifacts]
+[2023-09-03 16:11:38,725:INFO:common:created directory at: artifacts\prepare_callbacks\checkpoint_dir]
+[2023-09-03 16:11:38,727:INFO:common:created directory at: artifacts\prepare_callbacks\tensorboard_log_dir]
+[2023-09-03 16:11:38,735:INFO:common:created directory at: artifacts\training]
+[2023-09-03 16:13:05,830:INFO:main:>>>>>> stage Training completed <<<<<<
+
+x==========x]

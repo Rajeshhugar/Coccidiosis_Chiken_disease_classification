@@ -3,10 +3,10 @@ import urllib.request as request
 from zipfile import ZipFile
 import tensorflow as tf
 import time
-
+from Chicken_disease_classification.config.configuration import ConfigurationManager
 from pathlib import Path
 from Chicken_disease_classification.entity.config_entity import TrainingConfig
-
+from Chicken_disease_classification.components.prepare_callbacks import PrepareCallback 
 
 class Training:
     def __init__(self, config: TrainingConfig):
@@ -83,4 +83,3 @@ class Training:
             path=self.config.trained_model_path,
             model=self.model
         )
-
