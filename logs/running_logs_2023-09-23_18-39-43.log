@@ -1,0 +1,5 @@
+[2023-09-23 18:39:49,241:INFO:common:yaml file: config\config.yaml loaded successfully]
+[2023-09-23 18:39:49,244:INFO:common:yaml file: params.yaml loaded successfully]
+[2023-09-23 18:39:49,244:INFO:common:created directory at: artifacts]
+[2023-09-23 18:39:49,245:INFO:common:created directory at: artifacts/prepare_base_model]
+[2023-09-23 18:39:49,829:WARNING:saving_utils:Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]

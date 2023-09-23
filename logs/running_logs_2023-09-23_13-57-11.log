@@ -1,0 +1,4 @@
+[2023-09-23 13:57:53,569:INFO:common:yaml file: config\config.yaml loaded successfully]
+[2023-09-23 13:57:53,579:INFO:common:yaml file: params.yaml loaded successfully]
+[2023-09-23 13:57:53,583:INFO:common:created directory at: artifacts]
+[2023-09-23 13:58:16,345:INFO:common:json file saved at: scores.json]

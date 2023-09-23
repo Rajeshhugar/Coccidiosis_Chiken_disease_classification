@@ -1,3 +1,4 @@
+
 from Chicken_disease_classification.config.configuration import ConfigurationManager
 from Chicken_disease_classification.components.data_ingestion import DataIngestion
 from Chicken_disease_classification import logger
