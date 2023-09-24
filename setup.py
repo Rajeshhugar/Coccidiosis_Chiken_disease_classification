@@ -12,6 +12,7 @@ SRC_REPO = "Chicken_disease_classification"
 AUTHOR_EMAIL = "rajeshhugar94@gmail.com"
 
 
+
 setuptools.setup(
     name=SRC_REPO,
     version=__version__,
