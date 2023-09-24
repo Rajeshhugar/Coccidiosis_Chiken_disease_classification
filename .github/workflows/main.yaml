@@ -84,10 +84,7 @@ jobs:
       
       - name: Pull latest images
         run: |
-          docker login -u AWS -p ${{ secrets.AWS_ECR_TOKEN }} ${{ secrets.AWS_ECR_REGISTRY }}
-          docker pull ${{ secrets.AWS_ECR_LOGIN_URI }}/${{ secrets.ECR_REPOSITORY_NAME }}:latest
-
-          
+          docker pull  ${{ secrets.AWS_ACCESS_KEY_ID }}.dkr.ecr.${{ secrets.AWS_REGION }}.amazonaws.com/${{secrets.ECR_REPOSITORY}}:latest
 
       # - name: Stop and remove container if running
       #   run: |
