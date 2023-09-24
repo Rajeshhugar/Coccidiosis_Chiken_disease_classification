@@ -1,0 +1,67 @@
+[2023-09-24 11:48:17,293:INFO:_internal:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:80
+ * Running on http://192.168.0.181:80]
+[2023-09-24 11:48:17,294:INFO:_internal:[33mPress CTRL+C to quit[0m]
+[2023-09-24 11:48:20,359:INFO:_internal:127.0.0.1 - - [24/Sep/2023 11:48:20] "GET / HTTP/1.1" 200 -]
+[2023-09-24 11:49:14,504:ERROR:app:Exception on /predict [POST]]
+Traceback (most recent call last):
+  File "C:\Users\rajes\.conda\envs\chicken_disease\lib\site-packages\flask\app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\rajes\.conda\envs\chicken_disease\lib\site-packages\flask\app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\rajes\.conda\envs\chicken_disease\lib\site-packages\flask_cors\extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\rajes\.conda\envs\chicken_disease\lib\site-packages\flask\app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\rajes\.conda\envs\chicken_disease\lib\site-packages\flask\app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "C:\Users\rajes\.conda\envs\chicken_disease\lib\site-packages\flask_cors\decorator.py", line 130, in wrapped_function
+    resp = make_response(f(*args, **kwargs))
+  File "app.py", line 40, in predictRoute
+    result = clApp.classifier.predict()
+  File "D:\CHICKEN\Coccidiosis_Chiken_disease_classification\Chicken_disease_classification\pipeline\predict.py", line 16, in predict
+    model = load_model(os.path.join("artifacts","training", "model.h5"))
+  File "C:\Users\rajes\.conda\envs\chicken_disease\lib\site-packages\keras\src\saving\saving_api.py", line 238, in load_model
+    return legacy_sm_saving_lib.load_model(
+  File "C:\Users\rajes\.conda\envs\chicken_disease\lib\site-packages\keras\src\utils\traceback_utils.py", line 70, in error_handler
+    raise e.with_traceback(filtered_tb) from None
+  File "C:\Users\rajes\.conda\envs\chicken_disease\lib\site-packages\keras\src\saving\legacy\save.py", line 234, in load_model
+    raise IOError(
+OSError: No file or directory found at artifacts\training\model.h5
+[2023-09-24 11:49:14,604:INFO:_internal:127.0.0.1 - - [24/Sep/2023 11:49:14] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -]
+[2023-09-24 11:49:56,308:INFO:_internal:127.0.0.1 - - [24/Sep/2023 11:49:56] "GET / HTTP/1.1" 200 -]
+[2023-09-24 11:53:57,096:INFO:_internal:127.0.0.1 - - [24/Sep/2023 11:53:57] "GET /train HTTP/1.1" 200 -]
+[2023-09-24 11:54:17,155:INFO:_internal:127.0.0.1 - - [24/Sep/2023 11:54:17] "GET /train HTTP/1.1" 200 -]
+[2023-09-24 11:55:03,832:INFO:_internal:127.0.0.1 - - [24/Sep/2023 11:55:03] "GET / HTTP/1.1" 200 -]
+[2023-09-24 11:55:15,323:INFO:_internal:127.0.0.1 - - [24/Sep/2023 11:55:15] "POST /predict HTTP/1.1" 200 -]
+[2023-09-24 11:57:39,126:INFO:_internal:127.0.0.1 - - [24/Sep/2023 11:57:39] "GET /train HTTP/1.1" 200 -]
+[2023-09-24 12:01:32,128:INFO:_internal:127.0.0.1 - - [24/Sep/2023 12:01:32] "GET / HTTP/1.1" 200 -]
+[2023-09-24 12:01:32,821:INFO:_internal:127.0.0.1 - - [24/Sep/2023 12:01:32] "GET / HTTP/1.1" 200 -]
+[2023-09-24 12:01:33,239:INFO:_internal:127.0.0.1 - - [24/Sep/2023 12:01:33] "GET / HTTP/1.1" 200 -]
+[2023-09-24 12:01:33,472:INFO:_internal:127.0.0.1 - - [24/Sep/2023 12:01:33] "GET / HTTP/1.1" 200 -]
+[2023-09-24 12:01:33,672:INFO:_internal:127.0.0.1 - - [24/Sep/2023 12:01:33] "GET / HTTP/1.1" 200 -]
+[2023-09-24 12:01:33,857:INFO:_internal:127.0.0.1 - - [24/Sep/2023 12:01:33] "GET / HTTP/1.1" 200 -]
+[2023-09-24 12:03:11,626:INFO:_internal:127.0.0.1 - - [24/Sep/2023 12:03:11] "GET / HTTP/1.1" 200 -]
+[2023-09-24 12:03:23,397:INFO:_internal:127.0.0.1 - - [24/Sep/2023 12:03:23] "GET / HTTP/1.1" 200 -]
+[2023-09-24 12:03:26,404:INFO:_internal:127.0.0.1 - - [24/Sep/2023 12:03:26] "GET / HTTP/1.1" 200 -]
+[2023-09-24 12:03:26,899:INFO:_internal:127.0.0.1 - - [24/Sep/2023 12:03:26] "GET / HTTP/1.1" 200 -]
+[2023-09-24 12:03:27,293:INFO:_internal:127.0.0.1 - - [24/Sep/2023 12:03:27] "GET / HTTP/1.1" 200 -]
+[2023-09-24 12:03:27,524:INFO:_internal:127.0.0.1 - - [24/Sep/2023 12:03:27] "GET / HTTP/1.1" 200 -]
+[2023-09-24 12:03:27,715:INFO:_internal:127.0.0.1 - - [24/Sep/2023 12:03:27] "GET / HTTP/1.1" 200 -]
+[2023-09-24 12:05:40,963:INFO:_internal:127.0.0.1 - - [24/Sep/2023 12:05:40] "GET / HTTP/1.1" 200 -]
+[2023-09-24 12:05:54,914:INFO:_internal:127.0.0.1 - - [24/Sep/2023 12:05:54] "POST /predict HTTP/1.1" 200 -]
+[2023-09-24 12:06:58,392:INFO:_internal:127.0.0.1 - - [24/Sep/2023 12:06:58] "GET / HTTP/1.1" 200 -]
+[2023-09-24 12:06:58,957:INFO:_internal:127.0.0.1 - - [24/Sep/2023 12:06:58] "GET / HTTP/1.1" 200 -]
+[2023-09-24 12:06:59,178:INFO:_internal:127.0.0.1 - - [24/Sep/2023 12:06:59] "GET / HTTP/1.1" 200 -]
+[2023-09-24 12:06:59,528:INFO:_internal:127.0.0.1 - - [24/Sep/2023 12:06:59] "GET / HTTP/1.1" 200 -]
+[2023-09-24 12:06:59,728:INFO:_internal:127.0.0.1 - - [24/Sep/2023 12:06:59] "GET / HTTP/1.1" 200 -]
+[2023-09-24 12:06:59,898:INFO:_internal:127.0.0.1 - - [24/Sep/2023 12:06:59] "GET / HTTP/1.1" 200 -]
+[2023-09-24 12:07:34,122:INFO:_internal:127.0.0.1 - - [24/Sep/2023 12:07:34] "GET / HTTP/1.1" 200 -]
+[2023-09-24 12:07:37,145:INFO:_internal:127.0.0.1 - - [24/Sep/2023 12:07:37] "GET / HTTP/1.1" 200 -]
+[2023-09-24 12:07:37,621:INFO:_internal:127.0.0.1 - - [24/Sep/2023 12:07:37] "GET / HTTP/1.1" 200 -]
+[2023-09-24 12:07:37,884:INFO:_internal:127.0.0.1 - - [24/Sep/2023 12:07:37] "GET / HTTP/1.1" 200 -]
+[2023-09-24 12:07:38,174:INFO:_internal:127.0.0.1 - - [24/Sep/2023 12:07:38] "GET / HTTP/1.1" 200 -]
+[2023-09-24 12:07:38,399:INFO:_internal:127.0.0.1 - - [24/Sep/2023 12:07:38] "GET / HTTP/1.1" 200 -]
+[2023-09-24 12:07:48,547:INFO:_internal:127.0.0.1 - - [24/Sep/2023 12:07:48] "POST /predict HTTP/1.1" 200 -]
+[2023-09-24 12:07:51,264:INFO:_internal:127.0.0.1 - - [24/Sep/2023 12:07:51] "POST /predict HTTP/1.1" 200 -]
