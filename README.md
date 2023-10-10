@@ -143,11 +143,11 @@ s3cEZKH5yytiVnJ3h+eI3qhhzf9q1vNwEi6+q+WGdd+ACRCZ7JD6
 
 ## Run from terminal:
 
-docker build -t chickenapp.azurecr.io/chicken:latest .
+docker build -t chickenapp1.azurecr.io/chicken:latest .
 
-docker login chickenapp.azurecr.io
+docker login chickenapp1.azurecr.io
 
-docker push chickenapp.azurecr.io/chicken:latest
+docker push chickenapp1.azurecr.io/chicken:latest
 
 
 ## Deployment Steps:
